@@ -1519,6 +1519,17 @@ img { max-width: 100%; display: block; }
   .contact-item { gap: 12px; }
   .contact-icon { width: 40px; height: 40px; font-size: 1rem; flex-shrink: 0; }
 
+  /* --- MISSION BADGE --- */
+  .mission-badge-float {
+    right: 8px;
+    bottom: 12px;
+    padding: 8px 12px;
+    font-size: 0.72rem;
+    gap: 6px;
+    border-radius: 8px;
+  }
+  .mission-badge-float i { font-size: 0.8rem; }
+
   /* --- BLOG --- */
   .blog-full-grid { grid-template-columns: 1fr; gap: 40px; }
   .blog-sidebar { position: static; }
