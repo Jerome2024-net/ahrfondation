@@ -1,0 +1,158 @@
+﻿/* ══════════════════════════════════════════════
+   FONDATION AHR — Animations & Reveal Effects
+══════════════════════════════════════════════ */
+
+/* ── REVEAL ON SCROLL ── */
+.reveal,
+.reveal-left,
+.reveal-right {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.4,0,0.2,1);
+}
+
+.reveal { transform: translateY(40px); }
+.reveal-left { transform: translateX(-50px); }
+.reveal-right { transform: translateX(50px); }
+
+.reveal.visible,
+.reveal-left.visible,
+.reveal-right.visible {
+  opacity: 1;
+  transform: translate(0);
+}
+
+/* Delay utilities */
+[data-delay="100"] { transition-delay: 0.1s; }
+[data-delay="200"] { transition-delay: 0.2s; }
+[data-delay="300"] { transition-delay: 0.3s; }
+[data-delay="400"] { transition-delay: 0.4s; }
+[data-delay="500"] { transition-delay: 0.5s; }
+
+/* ── HERO ENTRANCE ── */
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-badge   { animation: heroFadeUp 0.8s ease 0.2s both; }
+.hero-title   { animation: heroFadeUp 0.8s ease 0.4s both; }
+.hero-subtitle{ animation: heroFadeUp 0.8s ease 0.6s both; }
+.hero-actions { animation: heroFadeUp 0.8s ease 0.8s both; }
+.hero-stats   { animation: heroFadeUp 0.8s ease 1.0s both; }
+
+/* ── ACCENT TEXT ── */
+.gold-text {
+  color: #1D1D1F;
+  font-weight: 800;
+}
+
+/* ── LOADER ── */
+.page-loader {
+  position: fixed;
+  inset: 0;
+  background: var(--black);
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.page-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.loader-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: 4px;
+}
+.loader-logo span { color: var(--gold); }
+.loader-bar {
+  width: 200px;
+  height: 2px;
+  background: rgba(0,0,0,0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.loader-progress {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold-dark), var(--gold), var(--gold-light));
+  border-radius: 2px;
+  animation: loadProgress 1.8s cubic-bezier(0.4,0,0.2,1) forwards;
+}
+@keyframes loadProgress {
+  from { width: 0%; }
+  to   { width: 100%; }
+}
+
+/* ── COUNTER ANIMATION ── */
+@keyframes countUp {
+  from { transform: translateY(10px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+/* ── CARD HOVER GLOW ── */
+.program-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(0,0,0,0.08) 0%, transparent 60%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.program-card:hover::after { opacity: 1; }
+
+/* ── NAV TOGGLE ANIMATION ── */
+.nav-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+.nav-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ── PULSE RING ── */
+@keyframes pulseRing {
+  0%   { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+.pulse-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  animation: pulseRing 2s ease-out infinite;
+}
+
+/* ── SUCCESS ICON ── */
+@keyframes successPop {
+  0%   { transform: scale(0) rotate(-180deg); opacity: 0; }
+  60%  { transform: scale(1.2); }
+  100% { transform: scale(1) rotate(0); opacity: 1; }
+}
+.success-icon { animation: successPop 0.5s cubic-bezier(0.4,0,0.2,1) forwards; }
+
+/* ── FLOATING ELEMENTS ── */
+@keyframes floatUpDown {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-12px); }
+}
+.mission-badge-float {
+  animation: floatUpDown 4s ease-in-out infinite;
+}
+
+/* ── LINE DRAW ── */
+@keyframes lineGrow {
+  from { transform: scaleX(0); transform-origin: left; }
+  to   { transform: scaleX(1); }
+}
+

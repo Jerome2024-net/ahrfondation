@@ -1,0 +1,665 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fondation AHR — Assistance and Human Rights Foundation</title>
+  <meta name="description" content="La Fondation AHR œuvre pour la défense des droits humains et l'assistance des populations vulnérables à travers le monde."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/animations.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ══════════════════════  NAVBAR  ══════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon" style="background:transparent; border:none;"><img src="https://res.cloudinary.com/dmwknarb2/image/upload/327393902_753303532380529_554003093604150796_n_wo1e9e.png" alt="Fondation AHR" style="width:44px; height:44px; object-fit:contain;"/></span>
+        <div class="logo-text">
+          <span class="logo-title">AHR</span>
+          <span class="logo-sub">Foundation</span>
+        </div>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link active">Accueil</a></li>
+        <li><a href="pages/about.html" class="nav-link">À Propos</a></li>
+        <li class="nav-dropdown">
+          <a href="#programs" class="nav-link">Programmes <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#programs">Droits Humains</a></li>
+            <li><a href="#programs">Aide Humanitaire</a></li>
+            <li><a href="#programs">Éducation & Formation</a></li>
+            <li><a href="#programs">Réfugiés & Déplacés</a></li>
+          </ul>
+        </li>
+        <li><a href="pages/blog.html" class="nav-link">Actualités</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">Nous Contacter <i class="fas fa-envelope"></i></a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════  HERO  ══════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Au service des couches les plus vulnérables
+      </div>
+      <h1 class="hero-title reveal">
+        Défendre les <span class="gold-text">Droits</span><br/>
+        Protéger l'<span class="gold-text">Humanité</span>
+      </h1>
+      <p class="hero-subtitle reveal">
+        La Fondation AHR œuvre pour l'assistance et la protection des droits des couches<br/>
+        les plus vulnérables de notre société, au Bénin et en Afrique de l'Ouest.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#contact" class="btn btn-gold">
+          <i class="fas fa-envelope"></i> Nous contacter
+        </a>
+        <a href="pages/about.html" class="btn btn-outline-white">
+          <i class="fas fa-play-circle"></i> Découvrir notre action
+        </a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat-item">
+          <span class="stat-number" data-target="8583">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Sinistrés secourus</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="1459">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Ménages assistés</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="1386">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Soutiens Facebook</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="7">0</span><span class="stat-suffix">ans</span>
+          <span class="stat-label">D'engagement</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Défiler</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════  MARQUEE  ══════════════════════ -->
+  <div class="marquee-bar">
+    <div class="marquee-track">
+      <span>Droits Humains</span><span class="marquee-sep">✦</span>
+      <span>Aide Humanitaire</span><span class="marquee-sep">✦</span>
+      <span>Justice & Dignité</span><span class="marquee-sep">✦</span>
+      <span>Protection des Réfugiés</span><span class="marquee-sep">✦</span>
+      <span>Éducation pour Tous</span><span class="marquee-sep">✦</span>
+      <span>Égalité & Liberté</span><span class="marquee-sep">✦</span>
+      <span>Droits des Femmes</span><span class="marquee-sep">✦</span>
+      <span>Accès à la Justice</span><span class="marquee-sep">✦</span>
+      <span>Droits Humains</span><span class="marquee-sep">✦</span>
+      <span>Aide Humanitaire</span><span class="marquee-sep">✦</span>
+      <span>Justice & Dignité</span><span class="marquee-sep">✦</span>
+      <span>Protection des Réfugiés</span><span class="marquee-sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════  MISSION  ══════════════════════ -->
+  <section class="mission-section section" id="mission">
+    <div class="container">
+      <div class="mission-grid">
+        <div class="mission-visual reveal-left">
+          <div class="mission-img-wrapper">
+            <div class="mission-img-placeholder" style="padding:0; overflow:hidden; background:none; border:none;">
+              <img src="https://res.cloudinary.com/dmwknarb2/image/upload/f_png/33831989_678188295853684_4920862546354765824_n_cxwmad.jpg" alt="Fondation AHR — Agir pour les vulnérables" style="width:100%; height:100%; object-fit:cover; border-radius:var(--radius-lg); display:block;"/>
+            </div>
+            <div class="mission-badge-float">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Bénin, Afrique de l'Ouest</span>
+            </div>
+          </div>
+          <div class="mission-quote">
+            <i class="fas fa-quote-left"></i>
+            <p>"Tous les êtres humains naissent libres et égaux en dignité et en droits."</p>
+            <cite>— DUDH, Article 1</cite>
+          </div>
+        </div>
+        <div class="mission-content reveal-right">
+          <div class="section-label">Notre Mission</div>
+          <h2 class="section-title">Agir pour les plus<br/><span class="gold-text">vulnérables</span></h2>
+          <p class="mission-text">
+            La Fondation AHR est une organisation à but non lucratif fondée par <strong style="color:var(--white)">Nathanaël KOTY</strong>,
+            dédiée à l'assistance des couches les plus vulnérables de la société au Bénin
+            et en Afrique de l'Ouest.
+          </p>
+          <p class="mission-text">
+            Nous intervenons en urgence lors de catastrophes naturelles, auprès des communautés
+            frappées par les inondations, la pauvreté et l'exclusion. Nos équipes distribuent des
+            vivres, médicaments et matériels essentiels directement aux populations sinistrées.
+          </p>
+          <div class="mission-values">
+            <div class="value-item">
+              <div class="value-icon"><i class="fas fa-hands-helping"></i></div>
+              <div>
+                <h4>Solidarité</h4>
+                <p>Aux côtés des plus défavorisés, dans les situations d'urgence.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon"><i class="fas fa-heart"></i></div>
+              <div>
+                <h4>Humanisme</h4>
+                <p>Chaque action est guidée par la compassion et le sens du devoir citoyen.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon"><i class="fas fa-seedling"></i></div>
+              <div>
+                <h4>Engagement local</h4>
+                <p>Enracinés dans les communautés béninoises pour un impact durable.</p>
+              </div>
+            </div>
+          </div>
+          <a href="pages/about.html" class="btn btn-gold-outline">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════  PROGRAMMES  ══════════════════════ -->
+  <section class="programs-section section" id="programs">
+    <div class="programs-bg-deco"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Nos Programmes</div>
+        <h2 class="section-title">Domaines d'<span class="gold-text">intervention</span></h2>
+        <p class="section-desc">
+          Des actions concrètes menées sur le terrain au Bénin, auprès des communautés
+          frappées par les catastrophes et la précarité.
+        </p>
+      </div>
+      <div class="programs-grid">
+        <div class="program-card reveal" data-delay="0">
+          <div class="program-icon">
+            <i class="fas fa-water"></i>
+          </div>
+          <div class="program-number">01</div>
+          <h3>Aide aux Sinistrés</h3>
+          <p>Intervention d'urgence lors des inondations au Bénin : distribution de riz, huile, médicaments et moustiquaires aux familles sinistrées.</p>
+          <a href="pages/blog.html" class="program-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="program-card reveal" data-delay="100">
+          <div class="program-icon">
+            <i class="fas fa-first-aid"></i>
+          </div>
+          <div class="program-number">02</div>
+          <h3>Santé & Hygiène</h3>
+          <p>Distribution de kits médicaux, médicaments essentiels et matériel d'hygiène aux populations vulnérables dans les zones reculées.</p>
+          <a href="pages/blog.html" class="program-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="program-card reveal" data-delay="200">
+          <div class="program-icon">
+            <i class="fas fa-bread-slice"></i>
+          </div>
+          <div class="program-number">03</div>
+          <h3>Sécurité Alimentaire</h3>
+          <p>Approvisionnement en vivres (sacs de riz, bidons d'huile) pour les familles dont les récoltes ont été détruites par les catastrophes.</p>
+          <a href="pages/blog.html" class="program-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="program-card reveal" data-delay="300">
+          <div class="program-icon">
+            <i class="fas fa-child"></i>
+          </div>
+          <div class="program-number">04</div>
+          <h3>Protection de l'Enfance</h3>
+          <p>Actions ciblées pour protéger les enfants touchés par la pauvreté et les catastrophes naturelles, et favoriser leur accès à l'éducation.</p>
+          <a href="pages/blog.html" class="program-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="program-card reveal" data-delay="400">
+          <div class="program-icon">
+            <i class="fas fa-home"></i>
+          </div>
+          <div class="program-number">05</div>
+          <h3>Soutien aux Communautés</h3>
+          <p>Actions sociales de proximité dans les villages et quartiers défavorisés des communes de Ouinhi, Zangnanando et de la région Agonli.</p>
+          <a href="pages/blog.html" class="program-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="program-card reveal" data-delay="500">
+          <div class="program-icon">
+            <i class="fas fa-balance-scale"></i>
+          </div>
+          <div class="program-number">06</div>
+          <h3>Droits & Dignité</h3>
+          <p>Promotion des droits humains fondamentaux et de la dignité des couches les plus défavorisées de la société béninoise.</p>
+          <a href="pages/blog.html" class="program-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════  IMPACT CHIFFRES  ══════════════════════ -->
+  <section class="impact-section section" id="impact">
+    <div class="impact-bg"></div>
+    <div class="container">
+      <div class="impact-grid">
+        <div class="impact-content reveal-left">
+          <div class="section-label light">Notre Impact</div>
+          <h2 class="section-title white">Des résultats<br/><span class="gold-text">mesurables</span></h2>
+          <p class="impact-text">
+            Chaque don, chaque action se traduit par un impact concret sur la vie
+            de familles béninoises frappées par la pauvreté et les catastrophes naturelles.
+          </p>
+          <div class="impact-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>8 583 sinistrés secourus lors des inondations Agonli</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>1 459 ménages assistés en vivres et médicaments</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Actions dans les communes de Ouinhi & Zangnanando</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-gold">Nous contacter <i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="impact-numbers reveal-right">
+          <div class="impact-card">
+            <div class="impact-icon"><i class="fas fa-users"></i></div>
+            <div class="impact-stat">
+              <span class="impact-num" data-target="8583">0</span><span>+</span>
+            </div>
+            <p>Sinistrés directement secourus</p>
+          </div>
+          <div class="impact-card">
+            <div class="impact-icon"><i class="fas fa-home"></i></div>
+            <div class="impact-stat">
+              <span class="impact-num" data-target="1459">0</span><span>+</span>
+            </div>
+            <p>Ménages assistés</p>
+          </div>
+          <div class="impact-card">
+            <div class="impact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="impact-stat">
+              <span class="impact-num" data-target="4">0</span><span>+</span>
+            </div>
+            <p>Localités couvertes (Agonli)</p>
+          </div>
+          <div class="impact-card">
+            <div class="impact-icon"><i class="fas fa-thumbs-up"></i></div>
+            <div class="impact-stat">
+              <span class="impact-num" data-target="1386">0</span><span>+</span>
+            </div>
+            <p>Soutiens sur Facebook</p>
+          </div>
+          <div class="impact-card">
+            <div class="impact-icon"><i class="fas fa-box-open"></i></div>
+            <div class="impact-stat">
+              <span class="impact-num" data-target="100">0</span><span>%</span>
+            </div>
+            <p>Dons alloués sur le terrain</p>
+          </div>
+          <div class="impact-card">
+            <div class="impact-icon"><i class="fas fa-calendar-check"></i></div>
+            <div class="impact-stat">
+              <span class="impact-num" data-target="7">0</span><span>ans</span>
+            </div>
+            <p>D'actions humanitaires</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════  TESTIMONIAUX  ══════════════════════ -->
+  <section class="testimonials-section section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Témoignages</div>
+        <h2 class="section-title">Des voix que nous<br/><span class="gold-text">défendons</span></h2>
+      </div>
+      <div class="testimonials-slider">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <div class="testimonial-card">
+            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+            <p>"Nous remercions l'envoyé de Dieu Nathanaël Koty d'avoir pensé à nous. Depuis que le débordement de l'eau a tout détruit, nous dormons à l'air libre à jeun. Vraiment, grand-frère Natha, que Dieu te bénisse !"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fas fa-user"></i></div>
+              <div>
+                <strong>Marie Bogninou</strong>
+                <span>Sinistrée de Tohouè, région Agonli — Bénin</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+            <p>"Chères populations, nous sommes contents. Notre cri de cœur a reçu d'échos favorables auprès du bon samaritain Nathanaël Koty. À peine sollicité, il a promptement répondu avec vivres, médicaments et moustiquaires."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fas fa-user"></i></div>
+              <div>
+                <strong>Serge Ekpangbo</strong>
+                <span>1er adjoint au Maire de Ouinhi — Bénin</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+            <p>"Ce n'est pas de votre faute d'être dans cette condition. Mais ce serait une faute grave si nous n'agissions pas. La Fondation AHR se fait le devoir de vous offrir un brin de sourire à travers ces présents."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fas fa-user"></i></div>
+              <div>
+                <strong>Nathanaël KOTY</strong>
+                <span>Président-Fondateur, Fondation AHR — Bénin</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+            <p>"La Fondation AHR qui travaille pour les couches vulnérables reviendra dans les prochains jours pour d'autres actions sociales plus pointues. Nous invitons toutes les bonnes volontés à faire autant."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fas fa-user"></i></div>
+              <div>
+                <strong>Bruno Viaho</strong>
+                <span>Membre actif, Fondation AHR — Bénin</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+          <div class="slider-dots" id="sliderDots"></div>
+          <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════  BLOG PREVIEW  ══════════════════════ -->
+  <section class="blog-preview-section section" id="news">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Actualités</div>
+        <h2 class="section-title">Dernières <span class="gold-text">nouvelles</span></h2>
+        <p class="section-desc">Restez informés de nos actions, rapports et événements à travers le monde.</p>
+      </div>
+      <div class="blog-grid">
+        <div class="blog-card featured reveal" style="overflow:hidden; display:flex; align-items:stretch; justify-content:center; background:transparent; border:none; box-shadow:none;">
+          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fahrfondation%2Fposts%2Fpfbid0Rk1g52JhXmCmSq9uefWDFMdXFMCAFdXYzMThd92JaocttdVY2HbYHH1hpQY56QLKl&show_text=true&width=500" width="500" height="545" style="border:none;overflow:hidden;display:block;max-width:100%;border-radius:var(--radius-lg);" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="blog-side">
+          <div class="blog-card-sm reveal" data-delay="100" style="background:transparent; border:none; box-shadow:none; padding:0; overflow:visible;">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fahrfondation%2Fposts%2Fpfbid02uwYQvBxTCbDTizNyrFGQZyXysoVNdLb65soQxeJ5K8eNu9d1woLPJxcKgtAxRHSAl&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden;display:block;max-width:100%;border-radius:var(--radius);" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+          <div class="blog-card-sm reveal" data-delay="200" style="background:transparent; border:none; box-shadow:none; padding:0; overflow:visible;">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fahrfondation%2Fposts%2Fpfbid02uwYQvBxTCbDTizNyrFGQZyXysoVNdLb65soQxeJ5K8eNu9d1woLPJxcKgtAxRHSAl&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden;display:block;max-width:100%;border-radius:var(--radius);" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+          <div class="blog-card-sm reveal" data-delay="300" style="background:transparent; border:none; box-shadow:none; padding:0; overflow:visible;">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fahrfondation%2Fposts%2Fpfbid0LVCz6cUpHkBPwqX7Twd5BV7eNKtuWEPssJAX1Fk1bFcpWMTqMDL9YzKHEGQ58543l&show_text=true&width=500" width="500" height="545" style="border:none;overflow:hidden;display:block;max-width:100%;border-radius:var(--radius);" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="text-center reveal">
+        <a href="pages/blog.html" class="btn btn-gold-outline">Toutes les actualités <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════  DON CTA  ══════════════════════ -->
+  <!-- ══════════════════════  PARTENAIRES  ══════════════════════ -->
+  <section class="partners-section section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Partenaires</div>
+        <h2 class="section-title">Ils nous font <span class="gold-text">confiance</span></h2>
+      </div>
+      <div class="partners-marquee">
+        <div class="partners-track">
+          <div class="partner-logo"><i class="fas fa-building"></i><span>Nations Unies</span></div>
+          <div class="partner-logo"><i class="fas fa-globe"></i><span>Union Européenne</span></div>
+          <div class="partner-logo"><i class="fas fa-heartbeat"></i><span>CICR</span></div>
+          <div class="partner-logo"><i class="fas fa-university"></i><span>UNHCR</span></div>
+          <div class="partner-logo"><i class="fas fa-hands-helping"></i><span>UNICEF</span></div>
+          <div class="partner-logo"><i class="fas fa-dove"></i><span>Amnesty Intl</span></div>
+          <div class="partner-logo"><i class="fas fa-balance-scale"></i><span>HRW</span></div>
+          <div class="partner-logo"><i class="fas fa-building"></i><span>Nations Unies</span></div>
+          <div class="partner-logo"><i class="fas fa-globe"></i><span>Union Européenne</span></div>
+          <div class="partner-logo"><i class="fas fa-heartbeat"></i><span>CICR</span></div>
+          <div class="partner-logo"><i class="fas fa-university"></i><span>UNHCR</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════  CONTACT  ══════════════════════ -->
+  <section class="contact-section section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="section-label">Contact</div>
+          <h2 class="section-title">Entrons en <span class="gold-text">contact</span></h2>
+          <p>Que vous souhaitiez faire un don, devenir partenaire, signaler une violation ou rejoindre notre équipe, nous sommes à votre écoute.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h4>Siège Social</h4>
+                <p>République du Bénin<br/>Région Agonli, Afrique de l'Ouest</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:info@fondation-ahr.com" style="color:var(--gold);">info@fondation-ahr.com</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-facebook"></i></div>
+              <div>
+                <h4>Facebook officiel</h4>
+                <p><a href="https://www.facebook.com/ahrfondation" target="_blank" style="color:var(--gold);">facebook.com/ahrfondation</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-youtube"></i></div>
+              <div>
+                <h4>YouTube</h4>
+                <p>Abonnez-vous à notre chaîne<br/>pour suivre nos actions terrain</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://www.facebook.com/ahrfondation" target="_blank" class="social-btn"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com" target="_blank" class="social-btn"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/mnjlwdde" method="POST">
+            <h3>Envoyer un message</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Prénom *</label>
+                <input type="text" name="prenom" placeholder="Jean" required/>
+              </div>
+              <div class="form-group">
+                <label>Nom *</label>
+                <input type="text" name="nom" placeholder="Dupont" required/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email *</label>
+              <input type="email" name="email" placeholder="jean.dupont@email.com" required/>
+            </div>
+            <div class="form-group">
+              <label>Objet</label>
+              <select name="objet">
+                <option value="">Sélectionner un objet</option>
+                <option>Devenir partenaire</option>
+                <option>Signaler une violation</option>
+                <option>Rejoindre l'équipe</option>
+                <option>Presse & Médias</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message *</label>
+              <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
+            </div>
+            <input type="hidden" name="_subject" value="Nouveau message — Fondation AHR"/>
+            <input type="hidden" name="_language" value="fr"/>
+            <button type="submit" class="btn btn-gold btn-full">
+              Envoyer le message <i class="fas fa-paper-plane"></i>
+            </button>
+            <p class="form-note"><i class="fas fa-lock"></i> Vos données sont protégées et ne seront jamais partagées.</p>
+            <div id="formSuccess" style="display:none; margin-top:16px; padding:16px; background:#d4edda; color:#155724; border-radius:8px; text-align:center;">
+              <i class="fas fa-check-circle"></i> Message envoyé ! Nous vous répondrons à <strong>info@fondation-ahr.com</strong> très prochainement.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════  NEWSLETTER  ══════════════════════ -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-content reveal">
+        <div class="newsletter-text">
+          <h3>Restez informé de notre action</h3>
+          <p>Rejoignez 25 000 abonnés qui suivent nos avancées dans le monde.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Votre adresse email" required/>
+          <button type="submit" class="btn btn-gold">S'abonner <i class="fas fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════  FOOTER  ══════════════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="nav-logo white">
+              <span class="logo-icon" style="background:transparent; border:none;"><img src="https://res.cloudinary.com/dmwknarb2/image/upload/327393902_753303532380529_554003093604150796_n_wo1e9e.png" alt="Fondation AHR" style="width:44px; height:44px; object-fit:contain;"/></span>
+              <div class="logo-text">
+                <span class="logo-title">AHR</span>
+                <span class="logo-sub">Foundation</span>
+              </div>
+            </a>
+            <p>Au service des couches les plus vulnérables. Organisation à but non lucratif basée au Bénin, fondée par Nathanaël KOTY.</p>
+            <div class="footer-socials">
+              <a href="https://www.facebook.com/ahrfondation" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="pages/about.html">À Propos</a></li>
+              <li><a href="#programs">Programmes</a></li>
+              <li><a href="pages/blog.html">Actualités</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#contact">Nous Contacter</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Programmes</h4>
+            <ul>
+              <li><a href="#">Droits Humains</a></li>
+              <li><a href="#">Aide Humanitaire</a></li>
+              <li><a href="#">Éducation & Formation</a></li>
+              <li><a href="#">Réfugiés & Déplacés</a></li>
+              <li><a href="#">Droits des Femmes</a></li>
+              <li><a href="#">Protection de l'Enfance</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Ressources</h4>
+            <ul>
+              <li><a href="#">Rapports annuels</a></li>
+              <li><a href="#">Publications</a></li>
+              <li><a href="#">Presse</a></li>
+              <li><a href="#">Emplois</a></li>
+              <li><a href="#">Bénévolat</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Fondation AHR — Au service des couches les plus vulnérables | Bénin, Afrique de l'Ouest</p>
+        <p style="font-size:0.8rem; color:var(--text-muted); margin-top:4px;">Contact : <a href="mailto:info@fondation-ahr.com" style="color:var(--gold);">info@fondation-ahr.com</a></p>
+        <div class="footer-legal">
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">Mentions légales</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════  BACK TO TOP  ══════════════════════ -->
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+  <script>
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const btn = contactForm.querySelector('button[type="submit"]');
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+        const data = new FormData(contactForm);
+        try {
+          const res = await fetch(contactForm.action, {
+            method: 'POST',
+            body: data,
+            headers: { 'Accept': 'application/json' }
+          });
+          if (res.ok) {
+            contactForm.reset();
+            document.getElementById('formSuccess').style.display = 'block';
+            btn.innerHTML = '<i class="fas fa-check"></i> Message envoyé';
+          } else {
+            btn.disabled = false;
+            btn.innerHTML = 'Envoyer le message <i class="fas fa-paper-plane"></i>';
+            alert('Une erreur est survenue. Veuillez réessayer.');
+          }
+        } catch {
+          btn.disabled = false;
+          btn.innerHTML = 'Envoyer le message <i class="fas fa-paper-plane"></i>';
+          alert('Impossible d\'envoyer le message. Vérifiez votre connexion.');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
+
