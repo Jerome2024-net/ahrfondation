@@ -877,6 +877,34 @@ img { max-width: 100%; display: block; }
 /* ══════════════════════════════════════════
    BLOG PREVIEW
 ══════════════════════════════════════════ */
+/* ══════════════  DOCUMENTARY  ══════════════ */
+.documentary-section { background: var(--dark); }
+.documentary-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.18);
+}
+.documentary-video {
+  width: 100%;
+  display: block;
+  background: #000;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.documentary-caption {
+  background: var(--gold);
+  color: var(--dark);
+  text-align: center;
+  padding: 14px 24px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.documentary-caption i { margin-right: 8px; }
+
 .blog-preview-section { background: var(--dark-2); }
 
 .blog-grid {
