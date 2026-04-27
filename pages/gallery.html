@@ -180,7 +180,7 @@
 
       <!-- Filters -->
       <div class="gallery-filters reveal">
-        <button class="filter-btn active" data-filter="all">Tous <span style="font-size:0.75rem; opacity:0.7;">(54)</span></button>
+        <button class="filter-btn active" data-filter="all">Tous <span id="countAll" style="font-size:0.75rem; opacity:0.7;"></span></button>
         <button class="filter-btn" data-filter="education">Éducation</button>
         <button class="filter-btn" data-filter="humanitaire">Humanitaire</button>
         <button class="filter-btn" data-filter="inauguration">Inaugurations</button>
@@ -541,6 +541,9 @@
     // ── FILTER ──
     const filterBtns = document.querySelectorAll('.gallery-filters .filter-btn');
     const items = document.querySelectorAll('.gallery-item');
+
+    // Compteur dynamique
+    document.getElementById('countAll').textContent = '(' + items.length + ')';
     filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         filterBtns.forEach(b => b.classList.remove('active'));
