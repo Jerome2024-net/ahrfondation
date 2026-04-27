@@ -885,6 +885,9 @@ img { max-width: 100%; display: block; }
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: 0 24px 80px rgba(0,0,0,0.18);
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
 }
 .documentary-video {
   width: 100%;
